@@ -1,0 +1,51 @@
+Golang
+
+acessar site: https://golang.org/doc/install?download=go1.13.5.linux-amd64.tar.gz
+
+Linha de comando: 
+
+    tar -C /usr/local -xzf go1.13.5.linux-amd64.tar.gz
+
+adicionar no etc/enviroment: /usr/local/go/bin
+
+criar uma workspace go: mkdir $HOME/go
+                        mkdir $HOME/go/bin
+                        mkdir $HOME/go/pkg
+                        mkdir $HOME/go/src
+
+adicionar no etc/enviroment: /home/victor/go/bin
+
+
+#Git e Github
+
+sudo apt-get install git
+
+git config --global user.name "Victor-Meireles"
+git config --global user.email victo6236@gmail.com
+
+git config --list
+
+no diretório digite:
+https://gzltech.wordpress.com/2017/01/27/instalando-o-git-e-configurando-o-github-no-linux-mint/
+ssh-keygen -t rsa -b 4096 -C "victo6236@gmail.com"
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com 
+
+
+https://medium.com/@rgdev/git-na-pr%C3%A1tica-parte-1-subindo-projeto-para-o-github-133e294221ae
+                     git clone https://github.com/Victor-Meireles/golangcodigo
+                     git init
+
+                     git add .
+
+                     git commit -m "Descrição"
+
+                     git remote add origin your_link
+
+                     git push -u origin master --force
+
+		     git rm -r file
+                     git commit -m "descrição"
+                     git push origin master
